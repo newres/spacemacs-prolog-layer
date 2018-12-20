@@ -1,0 +1,61 @@
+#+TITLE: prolog layer
+
+# The maximum height of the logo should be 200 pixels.
+[[img/prolog.png]]
+
+# TOC links should be GitHub style anchors.
+* Table of Contents                                        :TOC_4_gh:noexport:
+- [[#description][Description]]
+  - [[#features][Features:]]
+- [[#install][Install]]
+- [[#key-bindings][Key bindings]]
+  - [[#leader][Leader]]
+    - [[#consulting][Consulting]]
+
+* Description
+This layer adds support for Prolog using the bundled Prolog mode for Emacs. 
+
+** Features:
+  - Interactive Consulting and Compiling
+  - Auto-Formatting
+  - Apropos and Help Lookup
+
+    
+* Install
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =prolog= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+To add this layer directly to your private layers first clone it from the repo:
+
+=git clone https://github.com/newres/spacemacs-prolog-layer ~/.emacs.layers/spacemacs-prolog-layer=
+
+Then link this layer into your .emacs.d folder and ensure it can be found in a directory named =prolog=:
+
+=ln -s ~/.emacs.layers/spacemacs-prolog-layer/ ~/.emacs.d/private/prolog=
+
+Finally add the layer =prolog= to your dotspacemacs-configuration-layers.
+
+Note that the layer currently uses the Prolog mode that is bundled with Emacs. 
+If you want to use the separately maintained [[https://bruda.ca/_media/emacs/prolog.el][Prolog Mode by Stefan D. Bruda]]:
+- Place =prolog.el= in the =local/prolog= directory relative the layer directory.
+- When defining the =prolog-packages= for the layer, change =(prolog :location built-in)=
+ to =(prolog :location local)=.
+
+* Key bindings
+  
+** Leader
+*** Consulting
+
+| Key Binding | Description       |
+|-------------+-------------------|
+| ~SPC m s b~ | Consult Buffer    |
+| ~SPC m s f~ | Consult File      |
+| ~SPC m s p~ | Consult Predicate |
+| ~SPC m s r~ | Consult Region    |
+
+# Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
+# Examples:
+# [[https://github.com/syl20bnr/spacemacs/blob/master/doc/VIMUSERS.org#sessions]]
+# [[https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bfun/emoji/README.org][Link to Emoji layer README.org]]
+# If space-doc-mode is enabled, Spacemacs will open a local copy of the linked file.

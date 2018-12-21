@@ -23,10 +23,8 @@
         ;;TODO: Setup here is based on the setup description for prolog.el of Stefan D. Bruda, but it seems to work for the emacs built-in version as well. Might be possible to trim this a bit down or alternatively expand the layer to encompass mappings for Mercury mode as well.
         (autoload 'run-prolog "prolog" "Start a Prolog sub-process." t)
         (autoload 'prolog-mode "prolog" "Major mode for editing Prolog programs." t)
-        (autoload 'mercury-mode "prolog" "Major mode for editing Mercury programs." t)
         (setq prolog-system 'swi)
-        (setq auto-mode-alist (append '(("\\.pl$" . prolog-mode)
-                                        ("\\.m$" . mercury-mode))
+        (setq auto-mode-alist (append '(("\\.pl$" . prolog-mode))
                                       auto-mode-alist))        )
       :config
       (progn

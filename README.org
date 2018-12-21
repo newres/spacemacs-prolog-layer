@@ -11,6 +11,10 @@
 - [[#key-bindings][Key bindings]]
   - [[#leader][Leader]]
     - [[#consulting][Consulting]]
+    - [[#compiling][Compiling]]
+    - [[#formatting][Formatting]]
+    - [[#inserting][Inserting]]
+    - [[#help][Help]]
 
 * Description
 This layer adds support for Prolog using the bundled Prolog mode for Emacs. 
@@ -53,6 +57,38 @@ If you want to use the separately maintained [[https://bruda.ca/_media/emacs/pro
 | ~SPC m s f~ | Consult File      |
 | ~SPC m s p~ | Consult Predicate |
 | ~SPC m s r~ | Consult Region    |
+
+*** Compiling
+
+| Key Binding | Description       |
+|-------------+-------------------|
+| ~SPC m c b~ | Compile Buffer    |
+| ~SPC m c f~ | Compile File      |
+| ~SPC m c p~ | Compile Predicate |
+| ~SPC m c r~ | Compile Region    |
+| ~SPC m c c~ | Compile File      |
+
+*** Formatting 
+
+| Key Binding | Description   |
+|-------------+---------------|
+| ~SPC m =~   | Indent Buffer |
+
+*** Inserting
+
+| Key Binding | Description                                        |
+|-------------+----------------------------------------------------|
+| ~SPC m i m~ | Insert a Modeline for Module Specification         |
+| ~SPC m i n~ | Insert Newline and the Name for the Current Clause |
+| ~SPC m i p~ | Insert Predicate Template for the Current Clause   |
+| ~SPC m i s~ | Insert Predicate Spec                              |
+
+*** Help
+
+| Key Binding | Description                           |
+|-------------+---------------------------------------|
+| ~SPC m h a~ | Prolog Apropos for a Given String     |
+| ~SPC m h p~ | Online Help for the Atom under Cursor |
 
 # Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
 # Examples:

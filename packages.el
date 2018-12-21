@@ -43,24 +43,24 @@
           "cf" 'prolog-compile-file
           "cp" 'prolog-compile-predicate
           "cr" 'prolog-compile-region
-          ;;Dublicate keybinding to match expected convetion.
+          ;;Dublicate keybinding to match expected convention.
           "cc" 'prolog-compile-file
           ;;Formatting
-          "fb" 'prolog-indent-buffer
           "=" 'prolog-indent-buffer
           ;;Insert
+          "im" 'prolog-insert-module-modeline
+          "in" 'prolog-insert-next-clause
           "ip" 'prolog-insert-predicate-template
           "is" 'prolog-insert-predspec
           ;;Help
-          "hp" 'prolog-help-on-predicate
           "ha" 'prolog-help-apropos
+          "hp" 'prolog-help-on-predicate
           )
 
         (dolist (prefix '(("ms" . "consulting")
                           ("mc" . "compiling")
-                          ("mf" . "formatting")
                           ("mh" . "help")
-                          ("mi" . "insert")
+                          ("mi" . "inserting")
                           ))
           (spacemacs/declare-prefix-for-mode 'prolog-mode (car prefix) (cdr prefix))))
       ))

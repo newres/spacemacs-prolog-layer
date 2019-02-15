@@ -12,6 +12,7 @@
 (defconst prolog-packages
   '(
     (prolog :location built-in)
+    (ediprolog)
     ))
 
 
@@ -31,7 +32,6 @@
         (spacemacs/set-leader-keys-for-major-mode 'prolog-mode
           ;;Key Mappings
           ;;Consulting
-          ;;TODO: Decide whether consult fits better under REPL or evaluation keys (or both)
           "sb" 'prolog-consult-buffer
           "sf" 'prolog-consult-file
           "sp" 'prolog-consult-predicate
@@ -62,5 +62,15 @@
                           ))
           (spacemacs/declare-prefix-for-mode 'prolog-mode (car prefix) (cdr prefix))))
       ))
+
+(defun prolog/init-ediprolog ()
+  (use-package ediprolog
+    :defer t
+    :config
+    (progn
+      (spacemacs/set-leader-keys-for-major-mode 'prolog-mode
+        ;;Key Mappings
+        "ee" 'ediprolog-dwim)
+      (spacemacs/declare-prefix-for-mode 'prolog-mode "me" "evaluating" ))))
 
 ;;; packages.el ends here

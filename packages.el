@@ -65,7 +65,9 @@
 
 (defun prolog/init-ediprolog ()
   (use-package ediprolog
-    :defer t
+    ;; :init
+    ;; (progn
+    ;;   (autoload 'ediprolog "ediprolog" "Context sensitive interaction with SWI-prolog." t))
     :config
     (progn
       (spacemacs/set-leader-keys-for-major-mode 'prolog-mode

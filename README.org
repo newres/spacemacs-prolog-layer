@@ -17,7 +17,7 @@
     - [[#help][Help]]
 
 * Description
-This layer adds support for Prolog using the bundled Prolog mode for Emacs. 
+This layer adds support for Prolog using the bundled Prolog mode for Emacs. In addition it also adds ediprolog support. 
 
 ** Features:
   - Interactive Consulting and Compiling

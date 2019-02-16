@@ -17,12 +17,13 @@
     - [[#help][Help]]
 
 * Description
-This layer adds support for Prolog using the bundled Prolog mode for Emacs. In addition it also adds ediprolog support. 
+This layer adds support for Prolog using the bundled Prolog mode for Emacs. In addition it also adds ediprolog support for better interaction with SWI-Prolog. 
 
 ** Features:
-  - Interactive Consulting and Compiling
-  - Auto-Formatting
-  - Apropos and Help Lookup
+  - Designed for SWI-Prolog as a default, but can be used with other Prologs that Prolog mode supports. 
+  - Interactive consulting and compiling.
+  - Auto-formatting.
+  - Apropos and help lookup.
 
     
 * Install

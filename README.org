@@ -15,6 +15,7 @@
     - [[#formatting][Formatting]]
     - [[#inserting][Inserting]]
     - [[#help][Help]]
+    - [[#evaluating][Evaluating]]
 
 * Description
 This layer adds support for Prolog using the bundled Prolog mode for Emacs. In addition it also adds ediprolog support for better interaction with SWI-Prolog. 
@@ -90,6 +91,12 @@ If you want to use the separately maintained [[https://bruda.ca/_media/emacs/pro
 |-------------+---------------------------------------|
 | ~SPC m h a~ | Prolog Apropos for a Given String     |
 | ~SPC m h p~ | Online Help for the Atom under Cursor |
+
+*** Evaluating 
+
+| Key Binding | Description                               |
+|-------------+-------------------------------------------|
+| ~SPC m e e~ | Context Sensitive SWI-Prolog Interaction. |
 
 # Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
 # Examples:
